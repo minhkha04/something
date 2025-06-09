@@ -1,0 +1,5 @@
+docker run -d --name infertility-system-api -p 8080:8080 -e DB_URL=jdbc:mysql://my-app-db.cpss00242lw5.ap-northeast-1.rds.amazonaws.com/db_infertility_system minhkha160604/infertility-system-api:0.0.1
+
+sudo docker run  -d --name infertility-system-api -p 8080:8080 -e URL_RETURN=http://54.199.236.209/infertility-system-api/api/payment/vnpay-return minhkha160604/infertility-system-api:0.0.6
+
+docker build -t minhkha160604/infertility-system-api:0.0.5 .
